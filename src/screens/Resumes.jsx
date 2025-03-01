@@ -450,6 +450,15 @@ Design Thinking`;
                 <b>Step 6:</b> Select projects
             </div>
 
+            <label>
+                <input
+                    className='ml-1 mb-2'
+                    type="checkbox"
+                    checked={showRealDates}
+                    onChange={() => {setShowRealDates(prev => !prev);}}
+                /> Real Dates
+            </label>
+
             <div className='clickables-group'>
                 {integratedProjects.map((project, index) => {
                     const startDate = showRealDates ? project.RstartDate : project.FstartDate;
@@ -474,15 +483,6 @@ Design Thinking`;
                     );
                 })}
             </div>
-
-            <label>
-                <input
-                    className='ml-1 mt-2'
-                    type="checkbox"
-                    checked={showRealDates}
-                    onChange={() => {setShowRealDates(prev => !prev);}}
-                /> Show Real Dates
-            </label>
 
         </div>
 

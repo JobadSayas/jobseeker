@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Experience from "../components/Experience";
-import XdProjects from "../utils/XdProjects";
+import XdUdProjects from "../utils/XdUdProjects";
 
 // Definición del componente funcional
-const UxDesigner = () => {
+const UxEngineer = () => {
   const [showRealDates, setShowRealDates] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ const UxDesigner = () => {
         Real Dates
       </label>
 
-      {XdProjects.map((project, index) => {
+      {XdUdProjects.map((project, index) => {
         const startDate = showRealDates ? project.RstartDate : project.FstartDate;
         const endDate = showRealDates ? project.RendDate : project.FendDate;
 
@@ -41,4 +41,4 @@ const UxDesigner = () => {
   );
 };
 
-export default UxDesigner;
+export default UxEngineer;

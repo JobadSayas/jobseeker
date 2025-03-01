@@ -3,12 +3,12 @@ import Content from './Content';
 import copyToClipboard from '../utils/copyToClipboard';
 
 // Definición del componente funcional
-const Experience = ({title, project, role, company, location, FstartDate, FendDate, RstartDate, RendDate, details, tag}) => {
+const Experience = ({title, project, role, company, location, startDate, endDate, details, tag}) => {
 
-    const bundle = 
+const bundle = 
 `Project name: ${project}
 Company: ${company} | Role: ${role}
-Duration: ${FstartDate} - ${FendDate} | Location: ${location}
+Duration: ${startDate} - ${endDate} | Location: ${location}
 
 Details: 
 ${details}
@@ -57,27 +57,14 @@ ${details}
                 content = {location}
             />
             <Content 
-                label="Start date (F)" 
-                content = {FstartDate}
+                label="Start date" 
+                content = {startDate}
             />
             <span>-</span>
 
             <Content 
-                label="End date (F)" 
-                content = {FendDate}
-            />
-
-            <span> | </span>
-
-            <Content 
-                label="Start date (R)" 
-                content = {RstartDate}
-            />
-            <span>-</span>
-
-            <Content 
-                label="End date (R)" 
-                content = {RendDate}
+                label="End date" 
+                content = {endDate}
             />
 
         </div>

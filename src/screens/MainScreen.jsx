@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import UxDesigner from './UxDesigner';
-import UiDeveloper from './UiDeveloper';
+import UxEngineer from './UxEngineer';
 import Details from './Details';
 import Responses from './Responses';
 import Links from './Links';
@@ -167,7 +167,7 @@ const MainScreen = () => {
             <TabPanel><Resumes/></TabPanel>
             <TabPanel><Integrated/></TabPanel>
             <TabPanel><UxDesigner/></TabPanel>
-            <TabPanel><UiDeveloper/></TabPanel>
+            <TabPanel><UxEngineer/></TabPanel>
             <TabPanel><Details/></TabPanel>
             <TabPanel><Responses/></TabPanel>
             <TabPanel><Links/></TabPanel>
