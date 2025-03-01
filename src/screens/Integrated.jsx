@@ -6,30 +6,27 @@ import integratedProjects from '../utils/integratedProjects';
 const Integrated = () => {
   
   return (
-    <div>
-        <div className='space-y-4 pb-[150px]'>
+    <div className='space-y-4 pb-[150px]'>
 
-          {integratedProjects.map((project, index) => (
+      {integratedProjects.map((project, index) => (
 
-            <Experience 
-              key={index}
-              title= {project.title}
-              project= {project.project}
-              tag = {project.tag}
-              role = {project.role}
-              company = {project.company}
-              location = {project.location}
-              FstartDate={project.FstartDate}
-              FendDate={project.FendDate}
-              RstartDate={project.RstartDate}
-              RendDate={project.RendDate}
-              details={project.details}
-            />
+        <Experience 
+          key={index}
+          title= {project.title}
+          project= {project.project}
+          tag = {project.tag}
+          role = {project.role}
+          company = {project.company}
+          location = {project.location}
+          FstartDate={project.FstartDate}
+          FendDate={project.FendDate}
+          RstartDate={project.RstartDate}
+          RendDate={project.RendDate}
+          details={project.details}
+        />
 
-          ))}
+      ))}
 
-        </div>
-  
     </div>
   );
 };

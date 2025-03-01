@@ -1,28 +1,19 @@
-import React from 'react';
-import Experience from '../components/Experience';
-
-// Definición del componente funcional
-const UiDeveloper = () => {
-  
-  return (
-    <div>
-        <div className='space-y-4 pb-[150px]'>
-
-
-<Experience 
-title="All Walmart"
-tag = "yellow-500"
-role = "Senior UX Designer & UI Developer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="12/2021"
-FendtDate="01/2025" 
-RstartDate="12/2021"
-RendtDate="01/2025"   
-details={
+const integratedProjects = [
+{
+title: "All Walmart",
+project: "All Walmart",
+tag: "yellow-500",
+role: "Senior UX Designer & Researcher",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "12/2021",
+FendDate: "1/2025",
+RstartDate: "8/2020",
+RendDate: "1/2025",
+details: 
 `During my time at Walmart, I played a pivotal role in several key projects that enhanced user experience and optimized interfaces, focusing on both UX design and UI development. Here’s a summary of my contributions across various projects:
 
-#Project 6: iWMMS (12/2024 - 01/2025)
+#Project 6: iWMMS (12/2024 - 1/2025)
 Role: Senior UX Designer
 - Conducted interviews with legal teams to identify pain points and improvement opportunities.
 - Transformed user feedback into insights, enhancing satisfaction by 20%.
@@ -30,7 +21,7 @@ Role: Senior UX Designer
 - Proposed solutions to streamline legal workflows, boosting productivity.
 - Created high-fidelity Figma prototypes for user validation.
 
-#Project 5: WSR (05/2024 - 10/2024)
+#Project 5: WSR (5/2024 - 10/2024)
 Role: Senior UX Designer & UI Developer
 - Led the redesign of Walmart’s internal security platform, transitioning from a third-party tool to a custom-built solution.
 - Conducted user research, resulting in a 30% improvement in user satisfaction.
@@ -38,46 +29,45 @@ Role: Senior UX Designer & UI Developer
 - Integrated accessibility features, boosting compliance by 20% and ensuring usability for users with disabilities.
 - Delivered pixel-perfect layouts with React, improving front-end efficiency by 20%.
 
-#Project 4: IBG (04/2023 - 03/2024)
+#Project 4: IBG (4/2023 - 3/2024)
 Role: Senior UX Designer & UI Developer
 - Collaborated with a team of 12 designers to enhance a financial management tool.
 - Conducted user interviews, leading to a 30% improvement in user experience consistency.
 - Designed an innovative AI feature, improving user efficiency by 40%.
 - Established a robust QA process, reducing post-launch issues by 50%.
 
-#Project 3: GSPP (10/2022 - 03/2023)
+#Project 3: GSPP (10/2022 - 3/2023)
 Role: Lead UX Designer
 - Spearheaded the redesign of the Goal Setting and Performance Planning platform, managing design consistency across related systems.
 - Developed a comprehensive design system and presented insights to stakeholders, streamlining design handoffs by 25%.
 - Provided mentorship to junior designers, resulting in a 15% increase in team feedback scores.
 
-#Project 2: Report Hub (07/2022 - 09/2022)
+#Project 2: Report Hub (7/2022 - 9/2022)
 Role: Senior UX Designer & UX Researcher
 - Conducted user research to identify pain points, leading to a 30% increase in user satisfaction.
 - Created interactive prototypes and facilitated usability testing to enhance design effectiveness by 25%.
 - Ensured accessibility compliance, resulting in a 15% improvement in user engagement.
 
-#Project 1: IR Reports (11/2021 - 06/2022)
+#Project 1: IR Reports (11/2021 - 6/2022)
 Role: Senior UX Designer
 - Transformed complex financial datasets into intuitive visual reports, improving stakeholder understanding by 40%.
 - Established a design system for reporting tools, leading to a 25% reduction in development cycles.
 - Ensured compliance with WCAG 2.1 standards, enhancing platform inclusivity.
 
 Through these projects, I leveraged a variety of software tools such as Figma, React, and InVision, focusing on user-centered design principles and employing agile methodologies. My experience in conducting thorough UX research, leading design efforts, and developing functional UI components has equipped me to create effective solutions that meet user needs while aligning with business objectives.`
-}/>
-
-
-<Experience 
-title="iWMMS"
-tag = "slate-400"
-role = "Senior UX Designer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="12/2024"
-FendtDate="01/2025" 
-RstartDate="12/2024"
-RendtDate="01/2025"   
-details={
+},
+{
+title: "iWMMS",
+project: "iWMMS",
+tag: "slate-400",
+role: "Senior UX Designer",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "12/2024",
+FendDate: "1/2025",
+RstartDate: "12/2024",
+RendDate: "1/2025",
+details: 
 `Redesign and enhancement of certain screens in Walmart's internal legal case tracking platform, incorporating new features and refining the interface to streamline workflows and address usability issues.
 
 -Conducted interviews with legal team members to understand their workflows, challenges, and needs, identifying key pain points and opportunities for improvement.
@@ -88,20 +78,19 @@ details={
 -Documented design guidelines, workflows, and user flows in Confluence, ensuring seamless communication and collaboration with cross-functional teams throughout the project.
 
 Technologies: Figma, Confluence, JIRA, MS Teams`
-}/>
-
-
-<Experience 
-title="WSR"
-tag = "teal-500"
-role = "Senior UX Designer & UI Developer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="05/2024"
-FendtDate="10/2024" 
-RstartDate="05/2024"
-RendtDate="10/2024"   
-details={
+},
+{
+title: "WSR",
+project: "WSR",
+tag: "teal-500",
+role: "Senior UX Designer & UX Researcher",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "5/2024",
+FendDate: "10/2024",
+RstartDate: "5/2024",
+RendDate: "10/2024",
+details: 
 `Redesign and improvement of the security platform to replace third-party services and tailor it to the company's needs.
 
 -End-to-End Platform Redesign: Spearheaded the comprehensive redesign of Walmart’s internal security platform, replacing a third-party tool with a fully customized solution, improving system usability and security operations.
@@ -112,28 +101,22 @@ details={
 -Accessibility-Optimized UX: Integrated key accessibility features, such as keyboard navigation, ARIA labels, and high-contrast UI, into the platform's design. These UX enhancements improved usability for users with mobility and visual impairments, boosting accessibility compliance by 20%, as verified through internal audits.
 -Design Documentation: Documented design guidelines and specifications in Confluence to ensure effective communication among the multi-functional team, facilitating collaboration and alignment throughout the project.
 -Responsive Design Implementation: Delivered pixel-perfect layouts using React components, ensuring cross-device responsiveness and improving front-end development efficiency by 20%.
--Reusable React Component Creation: Collaborated with front-end developers to create reusable UI components with core functionality increasing development speed and maintaining consistency across the platform.
--Chart.js Implementation: Leveraged Chart.js for dynamic data visualization, enabling stakeholders to quickly interpret security metrics and operational data.
--Collaborative Development & Bug Fixing: Actively contributed as a developer on key functional aspects, writing React code for critical features and resolving numerous bugs, which helped reduce the overall bug count and ensured the project was delivered on time with the correct and expected functionality.
 -Design & Development QA: Led quality assurance (QA) efforts during the development phase, ensuring accurate UI implementation and adherence to design specifications, achieving a 100% approval rate during user testing.
--Unit Testing: Implemented unit testing with Jest and React Unit Testing to validate components, ensuring that the application remained stable and bug-free during the development cycle.
--Build Optimization with Webpack: Utilized Webpack for optimizing the build process, which improved load times and overall application performance.
 
-Technologies: Figma, Confluence, React, Redux, JavaScript ES6, REST APIs, JIRA, MS Teams, UserTesting, Git, GitHub, HTML & CSS, Tailwind, Jest, React Unit Testing`
-}/>
-
-
-<Experience 
-title="IBG"
-tag = "blue-800"
-role = "Senior UX Designer & UI Developer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="04/2023"
-FendtDate="03/2024" 
-RstartDate="04/2023"
-RendtDate="03/2024"   
-details={
+Technologies: Figma, React, Confluence, JIRA, MS Teams, Git, Tailwind`
+},
+{
+title: "IBG",
+project: "IBG",
+tag: "blue-800",
+role: "Senior UX Designer",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "4/2023",
+FendDate: "3/2024",
+RstartDate: "2/2023",
+RendDate: "2/2024",
+details: 
 `Collaboration with a large team of designers on an important finance tool, addressing various aspects of the design.
 
 -Cross-Functional Collaboration: Worked in close partnership with subsystem leads and cross-disciplinary teams, conducting in-depth reviews of design mockups and facilitating user interviews to identify pain points and functional needs. This collaboration resulted in the establishment of consistent design patterns, achieving a 30% improvement in user experience consistency across the platform.
@@ -144,21 +127,20 @@ details={
 -React Component Development for Subsystem: Developed reusable React components based on the newly defined design patterns within the subsystem, ensuring pixel-perfect accuracy and seamless alignment between design and development. This initiative not only improved the quality and consistency of the UI but also accelerated the development process by 30%, allowing for faster feature rollouts.
 -Agile Project Management: Agile Project Management: Actively participated in an Agile development environment, engaging in design sprints, two-week sprints, daily stand-up meetings, and retrospective sessions.
 
-Technologies: Figma, React, Redux, JavaScript ES6, JIRA, Slack, Git, GitHub.`
-}/>
-
-
-<Experience 
-title="GSPP"
-tag = "amber-600"
-role = "Lead UX Designer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="10/2022"
-FendtDate="03/2023" 
-RstartDate="10/2022"
-RendtDate="03/2023"   
-details={
+Technologies: Figma, React, JIRA, Slack, Git, GitHub.`
+},
+{
+title: "GSPP",
+project: "GSPP",
+tag: "amber-600",
+role: "Lead UX Designer",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "10/2022",
+FendDate: "3/2023",
+RstartDate: "5/2022",
+RendDate: "1/2023",
+details: 
 `Redesign and maintenance of a complex multi-user financial platform for managing departmental sales goals.
 
 -Design System Development: Defined and created a robust design subsystem, facilitating the implementation of reusable components. Developed a centralized linkable library in Figma, promoting efficiency and consistency across all 3 platforms.
@@ -168,21 +150,20 @@ details={
 -Mentorship & Team Development: Provided mentorship to junior designers, fostering a collaborative learning environment that enhanced team productivity and cohesion, as demonstrated by a 15% increase in team feedback scores.
 -Agile Methodology: Actively participated in Agile practices with design sprints, bi-weekly sprints, and daily scrums, ensuring adaptability and timely feedback incorporation.
 
-Technologies: Figma, JIRA, Teams, Confluence`
-}/>
-
-
-<Experience 
-title="Report Hub"
-tag = "green-500"
-role = "Senior UX Designer & UX Researcher"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="07/2022"
-FendtDate="09/2022" 
-RstartDate="07/2022"
-RendtDate="09/2022"   
-details={
+Technologies: Figma, JIRA, Teams, Confluence, Git, GitHub`
+},
+{
+title: "Report Hub",
+project: "Report Hub",
+tag: "green-500",
+role: "Senior UX Designer & UX Researcher",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "7/2022",
+FendDate: "9/2022",
+RstartDate: "2/2022",
+RendDate: "4/2022",
+details: 
 `Redesign of a finance portal housing numerous reports, accessed by a large user base within the finance sector.
 
 -Design Thinking Implementation: Applied design thinking principles to understand user needs and pain points, leading to user-centered solutions and improved overall satisfaction.
@@ -196,20 +177,19 @@ details={
 -Comprehensive Documentation & Design Handoff: Created detailed design specifications and screen flows in Figma, facilitating a smooth handoff to development teams. This improved clarity and reduced development time by 25%, ensurinklg accurate execution of design requirements.
 
 Technologies: Figma, UserTesting, Miro, Jira, Slack`
-}/>
-
-
-<Experience 
-title="IR Reports"
-tag = "sky-400"
-role = "Senior UX Designer"
-company = "Walmart"
-location = "Bentonville, AR"
-FstartDate="11/2021"
-FendtDate="06/2022" 
-RstartDate="11/2021"
-RendtDate="06/2022"   
-details={
+},
+{
+title: "IR Reports",
+project: "IR Reports",
+tag: "sky-400",
+role: "Senior UX Designer",
+company: "Walmart",
+location: "Bentonville, AR",
+FstartDate: "11/2021",
+FendDate: "6/2022",
+RstartDate: "8/2020",
+RendDate: "1/2022",
+details: 
 `Creation of multiple financial reports and dashboards, along with a design system to standardize layouts.
 
 -Data-Driven UX Design & Visualization: Conducted in-depth analysis of extensive financial datasets, organizing and translating raw Excel data into visually impactful reports. These reports utilized data visualization techniques to simplify complex information, improving stakeholder understanding by 40%.
@@ -222,20 +202,19 @@ details={
 -Power BI Integration: Created charts Guided the integration of design elements into Power BI, creating custom visuals and dashboards that aligned with the overall user experience and enhanced data presentation.
 
 Technologies: Figma, Sketch, InVision, WAVE (Web Accessibility Evaluation Tool), Contrast Checker, Power BI, Tableau, Excel`
-}/>
-
-
-<Experience 
-title="NYC DOB"
-tag = "orange-600"
-role = "UX Designer & UI Developer Jr."
-company = "NYC Department of Buildings"
-location = "NYC (Remote Work)"
-FstartDate="11/2020"
-FendtDate="10/2021" 
-RstartDate="11/2020"
-RendtDate="10/2021"   
-details={
+},
+{
+title: "NYC DOB",
+project: "NYC DOB",
+tag: "orange-600",
+role: "UX Designer",
+company: "NYC Department of Buildings",
+location: "NYC (Remote Work)",
+FstartDate: "11/2020",
+FendDate: "10/2021",
+RstartDate: "12/2022",
+RendDate: "11/2023",
+details: 
 `Maintenance of a large government platform with both customer-facing and internal sections.
 
 -Template Improvement & Alignment: Fixed and aligned existing HTML & CSS templates to ensure a consistent user interface (UI) across the platform. This effort improved overall usability and user satisfaction.
@@ -249,20 +228,19 @@ details={
 -Collaborated with development team to integrate WCAG and ADA/Section 508 compliant components, such as ARIA roles and properties, to improve the accessibility of interactive elements and enhance overall user experience.
 
 Technologies: Figma, Axure, Adobe Illustrator, Adobe Photoshop, Visual Studio, HTML, CSS, Bootstrap 5, Azure Cloud, WAVE (Web Accessibility Evaluation Tool), Agile Methodology, Responsive Web Design (RWD)`
-}/>
-
-
-<Experience 
-title="NYC DCWP"
-tag = "purple-500"
-role = "UX Designer & UI Developer Jr."
-company = "NYC Department of Consumer and Worker Protection"
-location = "NYC (Remote Work)"
-FstartDate="06/2020"
-FendtDate="10/2020" 
-RstartDate="06/2020"
-RendtDate="10/2020"   
-details={
+},
+{
+title: "NYC DCWP",
+project: "NYC DCWP",
+tag: "purple-500",
+role: "UX Designer",
+company: "NYC Department of Consumer and Worker Protection",
+location: "NYC (Remote Work)",
+FstartDate: "6/2020",
+FendDate: "10/2020",
+RstartDate: "7/2022",
+RendDate: "11/2022",
+details: 
 `Redesign of outdated, large government administrative platform for consistency and better experience.
 
 -Design Guideline Creation: Developed comprehensive design guidelines to standardize the most common UI components in MS Dynamics CRM, Using Bootstrap 4 and overrides ensuring visual consistency and improved user experience (UX) across the platform.
@@ -270,47 +248,45 @@ details={
 -Training & Mentorship: Provided training and support to UI developers on the implementation of the design guidelines, promoting best practices in user interface design and development.
 -Icon Design: Created custom icons to enrich the platform’s visual identity in MS Dynamics CRM, improving user recognition and engagement.
 -Collaboration & Task Management: Utilized Azure Cloud for efficient code sharing, task management, and collaboration within the design team, fostering a streamlined workflow and improved project transparency.
--Technologies: Figma, Adobe Illustrator, Visual Studio, HTML, CSS, Bootstrap 4, Azure Cloud, MS Dynamics CRM, User-Centered Design (UCD), Agile Methodology, UI Component Libraries.`
-}/>
 
-
-<Experience 
-title="CSP 2.0"
-tag = "blue-500"
-role = "Senior UX Designer & Lead UI Developer"
-company = "Schlumberger"
-location = "Houston, TX"
-FstartDate="09/2019"
-FendtDate="05/2020" 
-RstartDate="09/2019"
-RendtDate="05/2020"   
-details={
+Technologies: Figma, Adobe Illustrator, Visual Studio, HTML, CSS, Bootstrap 4, Azure Cloud, MS Dynamics CRM, User-Centered Design (UCD), Agile Methodology, UI Component Libraries.`
+},
+{
+title: "CSP 2.0",
+project: "CSP 2.0",
+tag: "blue-500",
+role: "Senior UX Designer & Researcher",
+company: "Schlumberger",
+location: "Houston, TX",
+FstartDate: "9/2019",
+FendDate: "5/2020",
+RstartDate: "9/2019",
+RendDate: "5/2020",
+details: 
 `Redesign the customer service portal for  Oil & Gas company, including new features requested by the users.
 
 -Requirements Analysis: Conducted thorough requirements analysis to understand client expectations and objectives, enabling a user-centered design approach.
 -UX Research: Executed in-depth stakeholder interviews and organized workshops, including card sorting exercises, to identify user pain points, needs, and workflows, leveraging insights to guide the design process.
 -Prototyping: Created high-fidelity mockups and engaging interactive prototypes with InVision, simulating real-time interactions to effectively visualize user journeys and gather user feedback.
 -UI Development: Developed and implemented dynamic user interface features using Angular 8, ensuring pixel-perfect, responsive layouts while integrating essential functionalities that enhance user engagement and optimize overall performance.
--UI Team Leadership: Led and organized the UI development team to ensure the final product adhered to design specifications, fostering a collaborative environment that achieved high-quality standards.
 -Quality Assurance: Conducted thorough code reviews and quality assurance processes, meticulously identifying and resolving bugs to ensure that all implementations met project goals and maintained the highest quality standards.
 -Agile Methodology: Operated within an agile methodology, facilitating weekly sprints and daily scrums to keep the team aligned and focused.
 -Task Management: Utilized Azure Cloud for efficient code sharing and streamlined task management, promoting transparency and collaboration throughout the development process.
 
-Technologies: InVision, HTML5, CSS3, Angular Material, JavaScript ES6, Angular 8, Azure Cloud.`
-}/>
-
-
-<Experience 
-title="CAP"
-tag = "orange-400"
-role = "Lead UX Designer & UI Developer Jr."
-company = "Conduent"
-location = "Raleigh, NC"
-FstartDate="03/2019"
-FendtDate="08/2019" 
-RstartDate="03/2019"
-RendtDate="08/2019"   
-details={
+Technologies: InVision, HTML5, CSS3, Angular Material, Angular 8.`
+},
+{
+title: "CAP",
+project: "CAP",
+tag: "orange-400",
+role: "Lead UX Designer",
+company: "Conduent",
+location: "Raleigh, NC",
+FstartDate: "3/2019",
+FendDate: "8/2019",
+RstartDate: "3/2019",
+RendDate: "8/2019",
+details: 
 `Construction of a white label big platform by Conduent to provide automation for business processes to major companies.
 
 -Leadership and Coordination: Led the UX design team, coordinating tasks among 3 designers while efficiently analyzing client requirements and ensuring synchronization across the team, resulting in a 30% improvement in project delivery time.
@@ -320,20 +296,19 @@ details={
 -Agile Methodology: Worked under Agile methodology with weekly sprints, actively participating in daily stand-ups and task planning to enhance team efficiency.
 
 Technologies: Sketch, Adobe XD, HTML5, CSS3, Bootstrap 3, JIRA, Agile Methodology`
-}/>
-
-
-<Experience 
-title="UX Designer, UX Researcher & UI Developer Jr."
-tag = "red-500"
-role = "Senior UX Designer &  UX Researcher"
-company = "USA Hockey"
-location = "Part remote, part onsite in Orlando, FL"
-FstartDate="03/2019"
-FendtDate="08/2019" 
-RstartDate="03/2019"
-RendtDate="08/2019"   
-details={
+},
+{
+title: "USA Hockey",
+project: "USA Hockey Registration Form",
+tag: "red-500",
+role: "Senior UX Designer &  UX Researcher",
+company: "USA Hockey",
+location: "Part remote, part onsite in Orlando, FL",
+FstartDate: "11/2018",
+FendDate: "2/2019",
+RstartDate: "10/2018",
+RendDate: "1/2019",
+details: 
 `Redesign of the registration form for kids' and teenagers' hockey classes.
 
 -User Research & Persona Development: Conducted in-depth user research to understand the needs and challenges faced by adult users in their 50s and 60s, developing user personas to guide the design process and enhance user-centered solutions.
@@ -342,25 +317,23 @@ details={
 -User Testing, A/B Testing & Iteration: Led user testing sessions and A/B testing to gather qualitative feedback and quantitative data, resulting in several design iterations that significantly improved the usability and overall satisfaction of the registration process.
 -Mobile-First: Designed and built the application using a mobile first approach, prioritizing mobile user experience and ensuring seamless functionality across all devices, which enhanced usability and engagement for users on smaller screens.
 -Developed responsive HTML & CSS templates with 100% design accuracy to the mockups, ensuring seamless functionality across mobile and larger screens, showcasing exceptional attention to detail in translating design vision into flawless implementation.
--Development Collaboration: Collaborated closely with front-end developers to guide the implementation of the design in Angular 2, ensuring compliance with established design specifications and usability standards.
 -Cross-Browser Compatibility Testing: Conducted rigorous testing for cross-browser functionality to ensure a seamless user experience across different platforms and devices.
 -Version Control & Project Management: Utilized Git for version control and efficient file sharing, ensuring streamlined collaboration among team members.
 
-Technologies: HTML5, CSS3, Bootstrap 3, Sketch, InVision, Affinity Designer, JavaScript, Angular, Git`
-}/>
-
-
-<Experience 
-title="GeoGPS & Metafin"
-tag = "lime-500"
-role = "UX Designer, Branding Designer & UI Developer Jr."
-company = "AV Plus"
-location = "Aguascalientes, Mexico"
-FstartDate="02/2017"
-FendtDate="10/2018" 
-RstartDate="02/2017"
-RendtDate="10/2018"   
-details={
+Technologies: HTML5, CSS3, Bootstrap 3, Sketch, InVision, Affinity Designer, Git`
+},
+{
+title: "AV Plus",
+project: "GeoGPS & Metafin",
+tag: "lime-500",
+role: "UX Designer & Branding Designer",
+company: "AV Plus",
+location: "Aguascalientes, Mexico",
+FstartDate: "2/2017",
+FendDate: "10/2018",
+RstartDate: "2/2017",
+RendDate: "1/2019",
+details: 
 `Contribution to several app projects and websites at a small software development agency.
 
 -Client Engagement: Collaborated directly with clients to gather requirements and ensure that UI/UX designs aligned with business objectives.
@@ -368,33 +341,27 @@ details={
 -Mockup Creation: Developed pixel-perfect mockups in Adobe Illustrator and Figma, ensuring the final design reflected client needs accurately.
 -User Story Development: Defined comprehensive user stories and interaction flows using Sketch, ensuring smooth user journeys.
 -Mobile Interface Design: Designed intuitive mobile interfaces and conducted user testing for optimal navigation and engagement.
--Front-End Development: Built responsive, high-performance front-end interfaces using HTML5, JavaScript, jQuery, and Bootstrap.
--Hybrid Mobile Apps: Developed hybrid mobile apps using PhoneGap and Cordova for cross-platform deployment on Android and iOS.
--Cross-Browser Testing: Ensured consistent functionality across different browsers through rigorous testing.
+-Developed responsive, accessible HTML and CSS templates with cross-browser compatibility to closely match design mockups, ensuring high fidelity and seamless user experience across devices and browsers.
 -Website Management & SEO: Managed WordPress-based websites, improving organic search ranking through SEO practices and tracking performance with Google Analytics.
--PHP and WordPress Customization: Customized WordPress templates and enhanced functionality using PHP, tailoring the user experience to specific client requirements.
--Google Maps Integration: Integrated Google Maps into the GeoGPS tracker, enabling real-time vehicle tracking and route optimization.
 -Branding Initiatives: Led branding efforts for multiple projects, enhancing visibility and market presence.
--Version Control: Used TortoiseSVN for version control, ensuring efficient collaboration and file management within the team.
 
-Technologies: HTML5, CSS3, Bootstrap 3, JavaScript, jQuery, PhoneGap & Cordova, WordPress, PHP, Google Analytics, TortoiseSVN, Sketch, Figma, Adobe Illustrator, Photoshop, Affinity Designer & Photo`
-}/>
-
-
-<Experience 
-title="All GE"
-tag = "sky-600"
-role = "Lead UX Designer, Branding Designer & UI Developer Jr."
-company = "General Electric (GE)"
-location = "Aguascalientes, Mexico"
-FstartDate="02/2012"
-FendtDate="01/2017" 
-RstartDate="02/2012"
-RendtDate="01/2017"   
-details={
+Technologies: Sketch, Figma, Adobe Illustrator, Photoshop, Affinity Designer & Photo, HTML5, CSS3, Bootstrap 3, WordPress, Google Analytics`
+},
+{
+title: "All GE",
+project: "All GE",
+tag: "sky-600",
+role: "Lead UX Designer & Branding Designer",
+company: "General Electric (GE)",
+location: "Aguascalientes, Mexico",
+FstartDate: "2/2012",
+FendDate: "1/2017",
+RstartDate: "2/2012",
+RendDate: "1/2017",
+details: 
 `During my time at GE, I led multiple critical projects focused on optimizing internal platforms, combining UX/UI design skills with web development. Using agile methodologies, I closely collaborated with development teams and clients to create intuitive, efficient solutions. My projects included:
 
-#Project 4: Corporate Audit System (CAS) (01/2016 – 01/2017)
+#Project 4: Corporate Audit System (CAS) (1/2016 – 1/2017)
 Role: Lead UX Designer
 - Led the UX/UI design team, driving the internal audit platform’s upgrade to enhance user experience and functionality.
 - Conducted user research and usability testing, gathering insights that guided design decisions, improving efficiency by 30%.
@@ -402,34 +369,29 @@ Role: Lead UX Designer
 - Utilized tools like Axure, Adobe Illustrator, and Sketch to create wireframes and prototypes, ensuring effective communication with the development team in India and the client in the U.S.
 - Managed tasks and reports using JIRA, tracking progress and outcomes.
 
-#Project 3: Sourcing IS (09/2014 – 12/2015)
+#Project 3: Sourcing IS (9/2014 – 12/2015)
 Role: UX Designer & UI Developer Jr.
 - Contributed to the development of a procurement tracking platform, redesigning the UI to replace outdated technologies like Flash with HTML5 and CSS3.
 - Performed requirements analysis and created wireframes with Balsamiq, delivering a more intuitive interface that boosted user satisfaction by 35%.
 - Implemented a standardized design system, facilitating the development of reusable features and optimizing implementation time by 20%.
 - Coordinated with cross-functional teams through remote communications with clients and the development team, managing tasks with JIRA and TortoiseSVN
 
-#Project 2: SkyEdge (08/2012 – 08/2014)
+#Project 2: SkyEdge (8/2012 – 8/2014)
 Role: UX Designer & UI Developer Jr.
 - Part of the team responsible for redesigning a social media campaign tracking platform, creating a new brand identity and improving the user experience.
 - Developed interactive prototypes and templates with Twitter Bootstrap, ensuring the platform was responsive and mobile-friendly.
 - Conducted usability testing and design adjustments based on user feedback, increasing user engagement by 40%.
 - Effectively collaborated within a 10-developer team, using agile methodologies for sprint planning and daily stand-ups
 
-#Project 1: Water TD (02/2012 – 07/2012)
+#Project 1: Water TD (2/2012 – 7/2012)
 Role: UI Developer Jr.
 -Participated in the initial development of a smart water supplier tracking platform, contributing HTML and CSS templates based on designs from the lead designer.
 - Enhanced UI quality by correcting alignment issues and adapting designs for cross-browser compatibility.
 - Fostered team collaboration through SCRUM and task management with JIRA, ensuring timely deliveries aligned with client requirements.
 
 Through these projects, I leveraged a variety of software tools such as Adobe Illustrator, Photoshop, Fireworks, Sketch, Balsamiq, HTML5, CSS3, SASS, Angular Material Design, TortoiseSVN, JavaScript, Foundation, Twitter Bootstrap.`
-}/>
+},
 
+];
 
-        </div>
-  
-    </div>
-  );
-};
-
-export default UiDeveloper;
+export default integratedProjects;
