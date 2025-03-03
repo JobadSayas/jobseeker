@@ -262,7 +262,7 @@ const requestCoverLetter =
 -Te voy a pasar también 2 proyectos de mi experiencia laboral, menciona lo más relevante de dichos proyectos para la job description.
 -Te voy a pasar tambien la lista de skills seleccionados, asegurate de integrarlos
 -De 1800 a 2000 caracteres, asegúrate que no sean menos de 1800 ni más de 2000
--Empieza la carta con la fecha de hoy en este formato: February 28, 2025
+-Empieza la carta con la fecha de hoy en este formato: ${todaysDate}
 -Tengo 13 años de experiencia en IT
 -Mi nombre es Jobad Sayas
 -Resalta en bold las palabras mas relevantes con <b>, pero no sobre cargas con muchas palabras en bold
