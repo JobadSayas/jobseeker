@@ -3,7 +3,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import UxDesigner from './UxDesigner';
 import UxEngineer from './UxEngineer';
 import Details from './Details';
-import Responses from './Responses';
+import Texting from './Texting';
 import Links from './Links';
 import Resumes from './Resumes';
 import Integrated from './Integrated';
@@ -150,7 +150,7 @@ const MainScreen = () => {
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
-            ">Responses</Tab>
+            ">Texting</Tab>
             <Tab className="
                 py-2 px-5
                 border-b-4
@@ -169,7 +169,7 @@ const MainScreen = () => {
             <TabPanel><UxDesigner/></TabPanel>
             <TabPanel><UxEngineer/></TabPanel>
             <TabPanel><Details/></TabPanel>
-            <TabPanel><Responses/></TabPanel>
+            <TabPanel><Texting/></TabPanel>
             <TabPanel><Links/></TabPanel>
         </TabPanels>
     </TabGroup>

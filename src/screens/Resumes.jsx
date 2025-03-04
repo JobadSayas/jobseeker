@@ -253,6 +253,7 @@ return `-Revisa la siguiente estructura html:
 -muestrame la opcion run HTML
 -No me hagas toda una estructura <html><body>, solo a partir del div que te estoy proveyendo
 -No hagas comentarios extras, solo dame el codigo
+-segurate de respetar los <br> (saltos de linea)
 `;};
 
 // STEP 12 - Request cover letter

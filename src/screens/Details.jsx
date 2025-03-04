@@ -72,6 +72,10 @@ const Details = () => {
             content = '72713'
           />
           <Content 
+            label="City & state" 
+            content = 'Bentonville, AR'
+          />
+          <Content 
             label="Full Address" 
             content = '5803 SW Parc st, Apt 101, Bentonville, AR, 72713'
           />
@@ -155,7 +159,7 @@ const Details = () => {
           />
           <Content 
             label=" Portfolio + Password" 
-            content = 'jobadsayas.com (TemporalAccess)'
+            content = 'jobadsayas.com (Pass: TemporalAccess)'
           />
           <Content 
             label=" Github (simple)"
