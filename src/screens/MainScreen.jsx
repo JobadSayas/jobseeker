@@ -12,6 +12,8 @@ import copyToClipboard from '../utils/copyToClipboard'; // Importa la función
 // Definición del componente funcional
 const MainScreen = () => {
 
+    const version = "2.0"
+
     const [postitVisible, setPostitVisible] = useState(false);
 
   // Agregar event listener para detectar la tecla "K"
@@ -35,12 +37,17 @@ const MainScreen = () => {
 
   return (
   <div className='relateive'>
+
     <TabGroup>
         <TabList className='sticky top-0 bg-white z-10 shadow-md'>
 
-            <div className="px-4 pt-4 flex flex-row space-x-1 justify-end items-center relative">
+            <div className="px-4 pt-4 flex flex-row space-x-1 justify-between items-center relative">
 
-                <div className='
+                <h1 className='font-bold text-2xl'><i className="fa-solid fa-briefcase"></i> JobSeeker</h1>
+
+                <div className=''>Version {version}</div>
+
+                {/* <div className='
                     py-1 px-2
                     rounded    
                     cursor-pointer
@@ -50,7 +57,7 @@ const MainScreen = () => {
                     active:translate-y-0.5
                     active:bg-blue-100
                     transition-colors duration-3000' 
-                onClick={() => copyToClipboard(emailText)}>
+                    onClick={() => copyToClipboard(emailText)}>
                     <i className="fa-solid fa-envelope mr-1"></i> 
                     <span className='hidden md:inline-block'>Emails</span>
                 </div>
@@ -87,7 +94,7 @@ const MainScreen = () => {
                 >
                     <i className="fa-solid fa-headset mr-1"></i>
                     <span className='hidden md:inline-block'>Connected</span>
-                </div>
+                </div> */}
 
             </div>
 
