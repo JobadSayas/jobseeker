@@ -9,6 +9,23 @@ const Links = () => {
     event.target.classList.add("selected");
   };
 
+  //Open Applying spcae
+  const applyingSpace = () => {
+    const links = [
+      'https://chat.deepseek.com/',
+      'https://chat.deepseek.com/',
+      'https://chat.deepseek.com/',
+      'https://chatgpt.com/?model=auto',
+      'https://docs.google.com/document/d/1OUujo_ZVWQvbTTKSy10yWkxJ4AxM-EALtL6mMr8Z44M/edit?tab=t.0#heading=h.y477ijvclfzh',
+      'https://docs.google.com/document/d/1mao6tkz191SEEsnNCs4Q6C2LgaZOdZAkrFIeuXoaKa4/edit?tab=t.0#heading=h.y477ijvclfzh',
+      'https://docs.google.com/spreadsheets/d/1CBn_weoXBOIkTbRUH8DzZYjcG48kwigC7CJT7I5iIi0/edit?gid=996828623#gid=996828623',
+      'https://countmytext.visssible.com/'
+    ];
+  
+    links.forEach(link => window.open(link, '_blank'));
+  };
+  
+
   return (
 
     <div className="flex flex-col space-y-2">
@@ -130,8 +147,18 @@ const Links = () => {
                     handleClick(event);
                 }}
             >
-                <i className="fa-solid fa-key"></i> Walmart applications
+                <i className="fa-solid fa-key"></i> Keyword reviewer
             </a>
+
+            <span
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                    applyingSpace();
+                }}
+            >
+                <i className="fa-solid fa-window-restore"></i> Open applying space
+            </span>
 
         </div>
 
