@@ -6,13 +6,14 @@ import Details from './Details';
 import Texting from './Texting';
 import Links from './Links';
 import Resumes from './Resumes';
+import USAmap from './USAmap';
 import Integrated from './Integrated';
 import copyToClipboard from '../utils/copyToClipboard'; // Importa la función
 
 // Definición del componente funcional
 const MainScreen = () => {
 
-    const version = "2.0"
+    const version = "2.4"
 
     const [postitVisible, setPostitVisible] = useState(false);
 
@@ -168,6 +169,16 @@ const MainScreen = () => {
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
             ">Links</Tab>
+            <Tab className="
+                py-2 px-5
+                border-b-4
+                text-xs
+                md:text-xl
+                font-bold
+                border-transparent
+                hover:border-b-4 hover:border-blue-500
+                data-[selected]:border-b-3 data-[selected]:border-blue-500
+            ">USA Map</Tab>
         </TabList>
 
         <TabPanels className="py-4 px-5">
@@ -178,6 +189,7 @@ const MainScreen = () => {
             <TabPanel><Details/></TabPanel>
             <TabPanel><Texting/></TabPanel>
             <TabPanel><Links/></TabPanel>
+            <TabPanel><USAmap/></TabPanel>
         </TabPanels>
     </TabGroup>
 

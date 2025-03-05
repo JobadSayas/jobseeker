@@ -90,8 +90,8 @@ Usability
 Scalability`.split("\n");
 
 
-//Step 1 - Initial instrucions
-const step1 = 
+//Request Job Description Summary
+const requestJobDescriptionSummary = 
 `-Te voy a pasar una job description
 -Puede ser que te lo pase en este mensaje al principio o al final o en el siguiente mensaje
 -No escribas nada sino te he pasado la job description
@@ -105,6 +105,7 @@ const step1 =
 -Menciona el salario si se especifica
 -Menciona el sector o industry si se especifica (government, finance, healthcare, education, etc).
 -Menciona duración si se especifica
+-Menciona work authorization, si solo green card, citizend o acepta visa, incluso si se especifica patrocionio de visa
 `;
 
 //Step 4 - List skills
@@ -256,8 +257,8 @@ return `-Revisa la siguiente estructura html:
 -segurate de respetar los <br> (saltos de linea)
 `;};
 
-// STEP 12 - Request cover letter
-const requestCoverLetter = 
+// Request cover letter DeepSeek
+const requestCoverLetterDeepSeek = 
 `-Hazme una cover letter en ingles para la posicion de la job description
 -Te voy a pasar nuevamente el resumen job description
 -Te voy a pasar también 2 proyectos de mi experiencia laboral, menciona lo más relevante de dichos proyectos para la job description.
@@ -303,6 +304,52 @@ ${selectedSkills}
 
 `;
 
+
+// Request cover letter GPT
+const requestCoverLetterGPT = 
+`-Hazme una cover letter en ingles para la posicion de la job description
+-Te voy a pasar nuevamente el resumen job description
+-Te voy a pasar también 2 proyectos de mi experiencia laboral, menciona lo más relevante de dichos proyectos para la job description.
+-Te voy a pasar tambien la lista de skills seleccionados, asegurate de integrarlos
+-De 1800 a 2000 caracteres, asegúrate que no sean menos de 1800 ni más de 2000
+-Empieza la carta con la fecha de hoy en este formato: ${todaysDate}
+-Tengo 13 años de experiencia en IT
+-Mi nombre es Jobad Sayas
+-Resalta en bold las palabras mas relevantes, pero no sobre cargas con muchas palabras en bold
+-menciona el nombre de la empersa si esta disponible
+-No pongas placeholders como [Company name], sino sabes algo no lo pongas, yo no voy a hacer adiciones
+-No hagas comentarios, solo dame el cover letter para solo copiar y pegar
+-No uses viñetas o bulletes porque ocupan mucho espacio, todo debe caber en 1 pagina de word. En vez de bullets mantenlo todo en parrafos
+-Te voy a pasar una lista de links a mi portafolio para varias proyectos
+-Si alguno de los dos proyectos que te comparto esta entre la lista de links, inserta el link
+-El link al portafolio debe de estar inline inmediatamente después de lo que menciones sobre el proyecto
+-Si el link al portafolio tiene password mencionado en parentesis. Ejemplo: (Password: TemporalAccess)
+-No pongas el link literal como https://jobadsayas.com/wsr a menos de que te lo especifique. Mejor integradlo de manera mas natural. Ejemplo: You can take a look to this project in this link (this link to be the clickable area)
+
+Lista de links al portafolio:
+-Todos los proyectos de Walmart tienen la misma contraseña: TemporalAccess.
+ReportHub: https://jobadsayas.com/walmart-report-hub (password: TemporalAccess.)
+WSR: https://jobadsayas.com/wsr (password: TemporalAccess.)
+IR Reports: https://jobadsayas.com/ir-reports (password: TemporalAccess.)
+IBG: https://jobadsayas.com/ibg-telescope (password: TemporalAccess.)
+CSP 2.0 https://jobadsayas.com/csp2
+USA Hockey https://jobadsayas.com/usa-hockey
+
+resumen de la job description:
+${jobDescriptionSummary}
+
+Proyecto 1:
+${project1}
+
+Proyecto 2:
+${project2}
+
+Skills seleccionados:
+${selectedSkills}
+
+`;
+
+
 const skillsList = `Design Systems
 Innovation
 Holistic Product View
@@ -338,16 +385,16 @@ Design Thinking`;
                         handleClick(event);
                     }}
                 >
-                    Open Deepseek
+                    <i className="fa-solid fa-up-right-from-square"></i> Open Deepseek
                 </a>
 
                 <span className="clickable"
                     onClick={(event) => {
                         handleClick(event);
-                        copyToClipboard(step1);
+                        copyToClipboard(requestJobDescriptionSummary);
                     }}
                 >
-                    Request job description summary
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask job description summary
                 </span>
             
             </div>
@@ -366,7 +413,7 @@ Design Thinking`;
                 insertJobDescription();
             }}
         >
-            <b>Step 3:</b> Insert job description summary
+            <b>Step 3:</b> <i className="fa-solid fa-download"></i> Insert job description summary
         </div>
 
 
@@ -382,7 +429,7 @@ Design Thinking`;
                         copyToClipboard(step4);
                     }}
                 >
-                    Request skills list
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask skills list
                 </div>
 
 
@@ -392,7 +439,7 @@ Design Thinking`;
                             insertSelectedSkills();
                         }}
                     >
-                        Insert selected skills
+                       <i className="fa-solid fa-download"></i> Insert selected skills
                     </div>
 
                     <div className="clickable"
@@ -502,7 +549,7 @@ Design Thinking`;
                         insertProject1();
                     }}
                 >
-                        Insert project 1
+                        <i className="fa-solid fa-download"></i> Insert project 1
                 </div>
 
                 <div className="clickable"
@@ -511,7 +558,7 @@ Design Thinking`;
                         insertProject2();
                     }}
                 >
-                        Insert project 2
+                        <i className="fa-solid fa-download"></i> Insert project 2
                 </div>
 
                 <div className="clickable"
@@ -520,7 +567,7 @@ Design Thinking`;
                         copyToClipboard(requestTailoredProjects(role));
                     }}
                 >
-                    Request tailored projects
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask tailored projects
                 </div>
 
                 <a
@@ -532,7 +579,7 @@ Design Thinking`;
                         copyToClipboard(selectedSkills);
                     }}
                 >
-                    Keyword reviewer
+                    <i className="fa-solid fa-up-right-from-square"></i>  Keyword reviewer
                 </a>
 
             </div>
@@ -554,7 +601,7 @@ Design Thinking`;
                         handleClick(event);
                     }}
                 >
-                    Open resume template
+                    <i className="fa-solid fa-up-right-from-square"></i> Open resume template
                 </a>
             
                 <span className="clickable"
@@ -563,7 +610,7 @@ Design Thinking`;
                         copyToClipboard(requestResumeSummary);
                     }}
                 >
-                    Request resume summary
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask resume summary
                 </span>
                 
             </div>
@@ -621,10 +668,19 @@ Design Thinking`;
                 <span className="clickable"
                     onClick={(event) => {
                         handleClick(event);
-                        copyToClipboard(requestCoverLetter);
+                        copyToClipboard(requestCoverLetterDeepSeek);
                     }}
                 >
-                    Request cover letter
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask Deepseek cover letter
+                </span>
+
+                <span className="clickable"
+                    onClick={(event) => {
+                        handleClick(event);
+                        copyToClipboard(requestCoverLetterGPT);
+                    }}
+                >
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask GPT cover letter
                 </span>
 
                 <a
@@ -635,7 +691,7 @@ Design Thinking`;
                         handleClick(event);
                     }}
                 >
-                    Open Cover letter editor
+                    <i className="fa-solid fa-up-right-from-square"></i> Open Cover letter editor
                 </a>
             
             </div>
