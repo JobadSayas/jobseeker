@@ -7,13 +7,14 @@ import Texting from './Texting';
 import Links from './Links';
 import Resumes from './Resumes';
 import USAmap from './USAmap';
+import Tracker from './Tracker';
 import Integrated from './Integrated';
 import copyToClipboard from '../utils/copyToClipboard'; // Importa la función
 
 // Definición del componente funcional
 const MainScreen = () => {
 
-    const version = "2.5"
+    const version = "2.6"
 
     const [postitVisible, setPostitVisible] = useState(false);
 
@@ -103,8 +104,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -113,8 +113,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -123,8 +122,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -133,8 +131,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -143,8 +140,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -153,8 +149,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -163,8 +158,7 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -173,8 +167,16 @@ const MainScreen = () => {
                 py-2 px-5
                 border-b-4
                 text-xs
-                md:text-xl
-                font-bold
+                md:text-lg
+                border-transparent
+                hover:border-b-4 hover:border-blue-500
+                data-[selected]:border-b-3 data-[selected]:border-blue-500
+            ">Tracker</Tab>
+            <Tab className="
+                py-2 px-5
+                border-b-4
+                text-xs
+                md:text-lg
                 border-transparent
                 hover:border-b-4 hover:border-blue-500
                 data-[selected]:border-b-3 data-[selected]:border-blue-500
@@ -189,6 +191,7 @@ const MainScreen = () => {
             <TabPanel><Details/></TabPanel>
             <TabPanel><Texting/></TabPanel>
             <TabPanel><Links/></TabPanel>
+            <TabPanel><Tracker/></TabPanel>
             <TabPanel><USAmap/></TabPanel>
         </TabPanels>
     </TabGroup>
