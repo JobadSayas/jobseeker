@@ -277,16 +277,16 @@ const requestCoverLetterDeepSeek =
 -Damelo en html, no empiezas con html, body, etc... solo agrupa todo en un div
 -al div holder ponle family: Arial y font size 14.5px
 -El link al portafolio debe de estar inline inmediatamente después de lo que menciones sobre el proyecto
--Si el link al portafolio tiene password mencionado en parentesis. Ejemplo: (Password: TemporalAccess)
+-Si el link al portafolio tiene password mencionado en parentesis. Ejemplo: (Password: SpecialAccess)
 -No pongas el link literal como https://jobadsayas.com/wsr a menos de que te lo especifique. Mejor integradlo de manera mas natural. Ejemplo: You can take a look to this project in this link (this link to be the clickable area)
 -Dame la opcion de Run HTML
 
 Lista de links al portafolio:
--Todos los proyectos de Walmart tienen la misma contraseña: TemporalAccess.
-ReportHub: https://jobadsayas.com/walmart-report-hub (password: TemporalAccess.)
-WSR: https://jobadsayas.com/wsr (password: TemporalAccess.)
-IR Reports: https://jobadsayas.com/ir-reports (password: TemporalAccess.)
-IBG: https://jobadsayas.com/ibg-telescope (password: TemporalAccess.)
+-Todos los proyectos de Walmart tienen la misma contraseña: SpecialAccess.
+ReportHub: https://jobadsayas.com/walmart-report-hub (password: SpecialAccess.)
+WSR: https://jobadsayas.com/wsr (password: SpecialAccess.)
+IR Reports: https://jobadsayas.com/ir-reports (password: SpecialAccess.)
+IBG: https://jobadsayas.com/ibg-telescope (password: SpecialAccess.)
 CSP 2.0 https://jobadsayas.com/csp2
 USA Hockey https://jobadsayas.com/usa-hockey
 
@@ -323,15 +323,15 @@ const requestCoverLetterGPT =
 -Te voy a pasar una lista de links a mi portafolio para varias proyectos
 -Si alguno de los dos proyectos que te comparto esta entre la lista de links, inserta el link
 -El link al portafolio debe de estar inline inmediatamente después de lo que menciones sobre el proyecto
--Si el link al portafolio tiene password mencionado en parentesis. Ejemplo: (Password: TemporalAccess)
+-Si el link al portafolio tiene password mencionado en parentesis. Ejemplo: (Password: SpecialAccess)
 -No pongas el link literal como https://jobadsayas.com/wsr a menos de que te lo especifique. Mejor integradlo de manera mas natural. Ejemplo: You can take a look to this project in this link (this link to be the clickable area)
 
 Lista de links al portafolio:
--Todos los proyectos de Walmart tienen la misma contraseña: TemporalAccess.
-ReportHub: https://jobadsayas.com/walmart-report-hub (password: TemporalAccess.)
-WSR: https://jobadsayas.com/wsr (password: TemporalAccess.)
-IR Reports: https://jobadsayas.com/ir-reports (password: TemporalAccess.)
-IBG: https://jobadsayas.com/ibg-telescope (password: TemporalAccess.)
+-Todos los proyectos de Walmart tienen la misma contraseña: SpecialAccess.
+ReportHub: https://jobadsayas.com/walmart-report-hub (password: SpecialAccess.)
+WSR: https://jobadsayas.com/wsr (password: SpecialAccess.)
+IR Reports: https://jobadsayas.com/ir-reports (password: SpecialAccess.)
+IBG: https://jobadsayas.com/ibg-telescope (password: SpecialAccess.)
 CSP 2.0 https://jobadsayas.com/csp2
 USA Hockey https://jobadsayas.com/usa-hockey
 
