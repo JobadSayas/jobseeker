@@ -155,11 +155,11 @@ const Details = () => {
           />
           <Content 
             label=" Password" 
-            content = 'TemporalAccess'
+            content = 'SpecialAccess'
           />
           <Content 
             label=" Portfolio + Password" 
-            content = 'jobadsayas.com (Pass: TemporalAccess)'
+            content = 'jobadsayas.com (Pass: SpecialAccess)'
           />
           <Content 
             label=" Github (simple)"
