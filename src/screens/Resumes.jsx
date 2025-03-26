@@ -14,7 +14,7 @@ const Resumes = () => {
   const [project2, setProject2] = useState("");
   const [selectedSkills, setSelectedSkills] = useState("");
   const [skillsSelectorVisible, setSkillsSelectorVisible] = useState(false);
-  const [showRealDates, setShowRealDates] = useState(false);
+  const [showRealDates, setShowRealDates] = useState(true);
   
 
   //Todays date
@@ -91,10 +91,13 @@ Scalability`.split("\n");
 
 
 //Request Job Description Summary
-const requestJobDescriptionSummary = 
+const requestJobDescriptionSummary = () => {
+
+    const content = prompt("Enter job description"); // Captura el nombre del reclutador
+
+    if (content) {
+        const promptwithJobDescription = 
 `-Te voy a pasar una job description
--Puede ser que te lo pase en este mensaje al principio o al final o en el siguiente mensaje
--No escribas nada sino te he pasado la job description
 -Cuando ya tengas la job description hazme un resumen muy breve de la job description en ingles
 -Quiero todo en bullets de máximo 150 caracteres cada uno
 -Menciona el tipo de rol
@@ -106,7 +109,21 @@ const requestJobDescriptionSummary =
 -Menciona el sector o industry si se especifica (government, finance, healthcare, education, etc).
 -Menciona duración si se especifica
 -Menciona work authorization, si solo green card, citizend o acepta visa, incluso si se especifica patrocionio de visa
+
+Job description:
+
+${content}
 `;
+
+        copyToClipboard(promptwithJobDescription); 
+
+
+    } else {
+        console.log("No job description entered");
+    }
+
+};
+
 
 //Step 4 - List skills
 const step4 = 
@@ -377,6 +394,16 @@ Design Thinking`;
 
             <div className='clickables-group'>
 
+
+                <span className="clickable"
+                    onClick={(event) => {
+                        handleClick(event);
+                        requestJobDescriptionSummary();
+                    }}
+                >
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask job description summary
+                </span>
+
                 <a
                     href="https://chat.deepseek.com/"
                     target="_blank"
@@ -387,15 +414,6 @@ Design Thinking`;
                 >
                     <i className="fa-solid fa-up-right-from-square"></i> Open Deepseek
                 </a>
-
-                <span className="clickable"
-                    onClick={(event) => {
-                        handleClick(event);
-                        copyToClipboard(requestJobDescriptionSummary);
-                    }}
-                >
-                    <i className="fa-solid fa-wand-magic-sparkles"></i> Ask job description summary
-                </span>
             
             </div>
 

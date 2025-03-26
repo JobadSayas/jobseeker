@@ -14,7 +14,7 @@ import copyToClipboard from '../utils/copyToClipboard'; // Importa la función
 // Definición del componente funcional
 const MainScreen = () => {
 
-    const version = "2.11"
+    const version = "2.14"
 
     const [postitVisible, setPostitVisible] = useState(false);
 
@@ -206,7 +206,6 @@ Esto es lo que espero que respondas:
 const askQuestion = () => {
     const question = prompt("What's the question?"); // Captura el nombre del reclutador
   
-    // Verifica que se haya ingresado un nombre
     if (question) {
         const questionPrompt = 
   `Hi I am looking for a job, looking for ux designer, ux researchers, ui developer or frontend developers.

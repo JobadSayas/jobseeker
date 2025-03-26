@@ -4,7 +4,7 @@ import XdProjects from "../utils/XdProjects";
 
 // Definición del componente funcional
 const UxDesigner = () => {
-  const [showRealDates, setShowRealDates] = useState(false);
+  const [showRealDates, setShowRealDates] = useState(true);
 
   return (
     <div className="space-y-4 pb-[150px]">

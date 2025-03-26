@@ -4,7 +4,7 @@ import XdUdProjects from "../utils/XdUdProjects";
 
 // Definición del componente funcional
 const UxEngineer = () => {
-  const [showRealDates, setShowRealDates] = useState(false);
+  const [showRealDates, setShowRealDates] = useState(true);
 
   return (
     <div className="space-y-4 pb-[150px]">

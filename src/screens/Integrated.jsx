@@ -4,7 +4,7 @@ import integratedProjects from "../utils/integratedProjects";
 
 // Definición del componente funcional
 const Integrated = () => {
-  const [showRealDates, setShowRealDates] = useState(false);
+  const [showRealDates, setShowRealDates] = useState(true);
 
   return (
     <div className="space-y-4 pb-[150px]">

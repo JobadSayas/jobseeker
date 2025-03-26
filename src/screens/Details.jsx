@@ -57,7 +57,7 @@ const Details = () => {
           />
           <Content 
             label="Address 2" 
-            content = 'Apt 1'
+            content = 'Apt 101'
           />
           <Content 
             label="City" 

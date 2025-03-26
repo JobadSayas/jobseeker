@@ -94,6 +94,131 @@ const Links = () => {
                 Lensa
             </a>
         </div>
+
+        <h2 className='font-bold text-xl'>Company Carrers</h2>
+
+        <div className='clickables-group'>
+            <a
+                href="https://careers.walmart.com/results?q=ux%20designer&page=1&sort=date&jobCity=Bentonville&jobState=AR&expand=department,brand,type,rate&jobCareerArea=all"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Walmart
+            </a>
+            <a
+                href="https://corporate.target.com/careers/job-search?currentPage=1&country=United%20States"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Target
+            </a>
+            <a
+                href="https://jobs.ford.com/careers?query=UI%2FUX%20Design&location=United%20States&pid=563568440116318&domain=ford.com&sort_by=relevance&triggerGoButton=false&triggerGoButton=true"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Ford
+            </a>
+            <a
+                href="https://jobs.grainger.com/search/?createNewAlert=false&q=ux+design&locationsearch="
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Grainger
+            </a>
+            <a
+                href=""
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Insight Global
+            </a>
+            <a
+                href="https://careers.homedepot.com/"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Home Depot
+            </a>
+            <a
+                href="https://jobs.careers.microsoft.com/global/en/search?q=ux%20designer&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Microsoft
+            </a>
+            <a
+                href="https://jobs.apple.com/en-us/search?search=ux%20designer&sort=relevance&location=united-states-USA"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Apple
+            </a>
+            <a
+                href="https://www.ibm.com/careers"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                IBM
+            </a>
+            <a
+                href="https://www.costco.com/careers.html"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Costco
+            </a>
+            <a
+                href="https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&country%5B%5D=USA&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=ux%20designer&city=&country=&region=&county=&query_options=&"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Amazon
+            </a>
+            <a
+                href="https://jobs.ebayinc.com/us/en/search-results?keywords=ux%20designer"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                Ebay
+            </a>
+        </div>
         
         <h2 className='font-bold text-xl'>Utilities</h2>
 
