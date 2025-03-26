@@ -247,6 +247,17 @@ const Links = () => {
             </a>
 
             <a
+                href="https://www.figma.com/design/514qmffqdT4yCkrDiJKkVz/Portfolio-Case-Studies?node-id=0-1&p=f&t=y4RDj5y3PYuOry4K-0"
+                target="_blank"
+                className="clickable"
+                onClick={(event) => {
+                    handleClick(event);
+                }}
+            >
+                <i className="fa-solid fa-play"></i> Case studies
+            </a>
+
+            <a
                 href="https://docs.google.com/spreadsheets/d/1CBn_weoXBOIkTbRUH8DzZYjcG48kwigC7CJT7I5iIi0/edit?gid=996828623#gid=996828623"
                 target="_blank"
                 className="clickable"

@@ -14,7 +14,7 @@ import copyToClipboard from '../utils/copyToClipboard'; // Importa la función
 // Definición del componente funcional
 const MainScreen = () => {
 
-    const version = "2.14"
+    const version = "2.15"
 
     const [postitVisible, setPostitVisible] = useState(false);
 

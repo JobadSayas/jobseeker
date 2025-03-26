@@ -127,7 +127,7 @@ ${content}
 
 //Step 4 - List skills
 const step4 = 
-`-De ese mismo job description hazme una lista de los skills mas relevantes para la posicion. Máximo 30
+`-De ese mismo job description hazme una lista de los skills mas relevantes para la posicion. Máximo 15
 -No explicaciones, solo los skills por ejemplo: ux design, user research, react, node.js, etc.
 -No omites ninguno skill
 -No los agrupes asi: Design Tools (Figma, Sketch, Adobe XD), sino que cada skill separado por coma: Figma, Sketch, Adobe XD
