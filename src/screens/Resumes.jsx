@@ -116,6 +116,7 @@ ${content}
 `;
 
         copyToClipboard(promptwithJobDescription); 
+        window.open("https://chat.deepseek.com/", "_blank");
 
 
     } else {
@@ -198,19 +199,15 @@ const requestResumeSummary =
 -Menciona mis 13 años de experiencia en IT y 6 años onsite en USA.
 -No menciones mi titulo ejemplo: “UX designer”, porque ya va a estar mencionado en otra sección
 -Aprovecha este párrafo para hablar solo de mi experiencia
--Menciona que algunas de las empresas para las que he trabajado son: Walmart, GE (General Electric), NYC Department of Buildings, USA Hockey.
+-Menciona que algunas de las empresas para las que he trabajado son: Walmart, GE (General Electric), USA Hockey.
 -Menciona mis 3 años de liderazgo si es relevante para la job description
 -Menciona mi experiencia en herramientas o tecnologías que tengan que ver con la job description
--Estos son los sectores en lo que he trabajado: Fintech, Retail, Corporate, Government, IT Security, Oil&Gas, Energy, Fintech, Startups, Legal, Sports. Menciona que he trabajado en sectores como… (y los 3 que tengan mas relación con la job description)
+-Estos son los sectores en lo que he trabajado: Fintech, Retail, Corporate, IT Security, Oil&Gas, Energy, Startups, Legal, Sports. Menciona que he trabajado en sectores como… (y los 3 que tengan mas relación con la job description)
 
 Cronologia:
 Company: Walmart | Role: Senior UX Designer, Researcher & UI Developer
-Duration: 12/2021 - 1/2025 | Location: Bentonville, AR
+Duration: 8/2020 - 1/2025 | Location: Bentonville, AR
 At Walmart, I contributed to key projects enhancing user experience and optimizing interfaces. From conducting in-depth research and designing high-fidelity prototypes to developing UI components, I led initiatives that improved user satisfaction by 30%, boosted productivity, and ensured accessibility compliance, driving a 25% increase in usability.
-
-Company: NYC | Role: Senior UX Designer & UI Developer Jr.
-Duration: 6/2020 - 10/2021 | Location: NYC (Remote)
-Enhanced UI consistency and user experience for NYC's DOB and DCWP platforms, impacting thousands of users. Created high-fidelity mockups, interactive prototypes, and custom icons. Delivered responsive, pixel-perfect HTML/CSS templates. Implemented accessibility features and developed design guidelines, mentoring developers on best practices.
 
 Company: Infosys | Role: Lead UX Designer & Lead UI Developer
 Duration: 3/2019 - 5/2020 | Location: Raleigh, NC and Houston, TX

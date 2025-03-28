@@ -8,7 +8,7 @@ const Tracker = () => {
   // Función para obtener las cantidades de registros
   const fetchProjectCounts = async () => {
     try {
-      const response = await axios.get("https://jobseeker.visssible.com/backend/count.php");
+      const response = await axios.get("https://jobseeker.visssible.com/backend/tracker-count.php");
       if (response.data.success) {
         setTotalProjects(response.data.totalProjects); // Total de proyectos
         setProjectsToday(response.data.projectsToday); // Proyectos de hoy
@@ -23,7 +23,7 @@ const Tracker = () => {
   // Función para agregar un nuevo registro
   const handleClick = async () => {
     try {
-      const response = await axios.get("https://jobseeker.visssible.com/backend/insert.php");
+      const response = await axios.get("https://jobseeker.visssible.com/backend/tracker-insert.php");
       if (response.data.success) {
         // Después de insertar, actualizamos ambos contadores
         fetchProjectCounts(); // Vuelve a consultar las cantidades actualizadas de registros
